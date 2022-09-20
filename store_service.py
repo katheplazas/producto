@@ -24,4 +24,4 @@ def start_service():
         else:
             name_product = json.loads(msg.value())
             print(name_product)
-            product_producer.produce('store-product', value=json.dumps({"valor": "1234"}))
+            product_producer.produce('store-product', value=json.dumps(name_product))
